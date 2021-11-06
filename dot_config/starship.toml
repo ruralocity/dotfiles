@@ -9,3 +9,37 @@ disabled = true
 [character]
 success_symbol = "\\$"
 
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# Disable the AWS module; it's noisy
+[aws]
+disabled = true
+
+# I'd like to be able to get rid of the "on" prefix in a future version
+[git_branch]
+symbol = ""
+
+# How to make this do something?
+#[git_commit]
+
+#commit_hash_length = 4
+[directory]
+style = "bold cyan"
+truncate_to_repo = false
+truncation_length = 5
+
+# Language configs might be useful when they're less wordy someday.
+
+[ruby]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[golang]
+disabled = true
