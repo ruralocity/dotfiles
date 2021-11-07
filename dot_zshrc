@@ -2,6 +2,8 @@
 alias ls="exa -lhgbH --git"
 alias la="exa -lahgbH --git"
 
+alias cat="bat"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
