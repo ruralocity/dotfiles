@@ -1,4 +1,9 @@
+# Aliases
+alias ls="exa -lhgbH --git"
+alias la="exa -lahgbH --git"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Start up Starship prompt customization
 eval "$(starship init zsh)"
