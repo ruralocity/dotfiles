@@ -1,0 +1,54 @@
+[core]
+  quotepath = false
+	excludesfile = {{ .chezmoi.homeDir }}/.gitignore_global
+        # autocrlf = input
+        autocrlf = false
+        safecrlf = true
+  pager = delta --plus-color="#012800" --minus-color="#340001"
+[user]
+	name = Aaron Sumner
+	email = {{ .email }}
+[color]
+  ui = true
+#[interactive]
+#  diffFilter = delta --color-only
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  subway = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log -p
+  type = cat-file -t
+  dump = cat-file -p
+  # http://technosorcery.net/blog/2010/02/07/fun-with-the-upcoming-1-7-release-of-git-rebase---interactive---autosquash/
+  # fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+  # squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+  fixup = !sh -c 'git commit --fixup=$1' -
+  squash = !sh -c 'git commit --squash=$1' -
+ ri = rebase --interactive --autosquash
+  finalize = rebase --interactive --autosquash
+  branches = for-each-ref --sort='authordate:iso8601' --format='%(authordate:relative)%09%(authorname)%09%(refname:short)' refs/heads
+  summary = status -u -s
+  unstage = reset -q HEAD
+  remotes = remote -v
+  what = show -w
+  staged = diff --staged
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[push]
+	default = simple
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+  log = diff-so-fancy | less --tabs=1,5 -RFX
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
