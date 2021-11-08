@@ -3,6 +3,32 @@ alias ls="exa -lhgbH --git"
 alias la="exa -lahgbH --git"
 
 alias cat="bat"
+alias diff="icdiff"
+
+alias be="bundle exec"
+
+alias gs='git status '
+alias ga='git add '
+#alias gb='git branch '
+alias gc='git commit -v'
+alias gd='git diff'
+#alias gco='git checkout '
+#alias gk='gitk --all&'
+#alias gx='gitx --all'
+alias gl='git log --oneline'
+alias glr='git log --oneline --reverse'
+#alias gh='git hist'
+alias gap='git add -p '
+alias gan='git add --intent-to-add '
+alias gce='git commit -m "empty commit" --allow-empty'
+alias gf='git fetch'
+alias gpr='git pull --rebase'
+#alias gp='git push '
+alias glp='git log -p '
+alias glu='git log -p @{u}'
+alias gdu='git diff @{u}'
+alias grhu='git reset --hard @{u}'
+
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
