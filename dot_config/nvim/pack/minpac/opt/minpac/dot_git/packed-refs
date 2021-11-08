@@ -1,0 +1,21 @@
+# pack-refs with: peeled fully-peeled sorted 
+86722338fbd0f948b7f41588b02e81be59ab4114 refs/remotes/origin/appveyor-cache-temp
+e04fbf9d1b96e789c43ac48223d8c11cea0fd347 refs/remotes/origin/appveyor-test
+0fd746b44544f19c2e4ab6dc31f4eb07000b1a0b refs/remotes/origin/ci-enable-neovim-on-ubuntu
+6cf985065aaeba4c9943c80e9aee61a1b86c1fad refs/remotes/origin/devel
+a01f565cd3e24c3e9f4ad9b1c665b782bbc51e91 refs/remotes/origin/improve-ci-temp
+6cf985065aaeba4c9943c80e9aee61a1b86c1fad refs/remotes/origin/master
+e096a297bbc91b16416b90598b3810df543382db refs/remotes/origin/runtest-upstream
+5351955003b07a747e700c119ff9483c84b248f4 refs/remotes/origin/update-async-vim
+ffeae319ad162017cd3df6d51fd958558ac554db refs/tags/v0.1
+^bb2bf0305d0371072ccfe8e175d01579addd10b8
+c3e811bea1577f7e7b33439c760ff10b41ff896a refs/tags/v0.2
+^727d0cfd66f4b71a3ca16f7a482df943df98ee9a
+616698401952d6e9f0d6b62ed89e39ff26d82dfd refs/tags/v1.0
+^8a232dfc6d2db79a1b43f797e821c97d38321f1d
+8ed356bba9574b755eb5404f53fc93de7675b411 refs/tags/v2.0
+^c2a0d5e3ae0d50f0ffa7392673edd1a021f8bd0b
+2696812e2e47b050ac68c797709bf4f850192711 refs/tags/v2.0.1
+^6a915e7cfb9280e03a492448bb59da0390f91779
+52ccc51736d94e6f3ced420cf24fff14bf4a06d3 refs/tags/v3.0.0
+^1761f924d78c9e44dc2bcfd65c6123e96cdf209d
