@@ -1,0 +1,23 @@
+brew "chezmoi"
+brew "git"
+brew "vim"
+brew "nvim"
+brew "less" # to support configuration via a .lesskey file
+
+brew "exa"
+brew "ripgrep"
+brew "jq"
+brew "bat"
+brew "tree"
+brew "httpie"
+brew "lynx"
+brew "icdiff"
+brew "diff-so-fancy"
+
+brew "node"
+brew "yarn"
+brew "npm"
+
+brew "gpg"
+brew "cmake"
+
