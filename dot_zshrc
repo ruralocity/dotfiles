@@ -29,7 +29,15 @@ alias glu='git log -p @{u}'
 alias gdu='git diff @{u}'
 alias grhu='git reset --hard @{u}'
 
+# Exports
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+# simplify neovim setup commands (from "Modern Vim" book)
+export VIMCONFIG=~/.config/nvim
+export VIMDATA=~/.local/share/nvim
+export FZF_DEFAULT_COMMAND="rg --files"
 
+export PATH="/usr/local/heroku/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
