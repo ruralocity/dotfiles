@@ -43,3 +43,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Start up Starship prompt customization
 eval "$(starship init zsh)"
+
+# Git autocomplete
+autoload -Uz compinit && compinit
