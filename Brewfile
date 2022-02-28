@@ -13,6 +13,7 @@ brew "httpie"
 brew "lynx"
 brew "icdiff"
 brew "diff-so-fancy"
+cask "devtoys"
 
 brew "node"
 brew "yarn"
