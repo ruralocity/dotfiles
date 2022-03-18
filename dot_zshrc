@@ -5,6 +5,8 @@ alias la="exa -lahgbH --git"
 alias cat="bat"
 alias diff="icdiff"
 
+alias yless="jless --yaml"
+
 alias be="bundle exec"
 
 alias gs='git status '
