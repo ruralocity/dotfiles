@@ -24,3 +24,5 @@ brew "npm"
 brew "gpg"
 brew "cmake"
 
+brew "adr-tools"
+
