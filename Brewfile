@@ -5,6 +5,7 @@ brew "nvim"
 brew "less" # to support configuration via a .lesskey file
 
 brew "exa"
+brew "macos-trash"
 brew "ripgrep"
 brew "jq"
 brew "bat"

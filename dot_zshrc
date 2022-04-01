@@ -4,6 +4,7 @@ alias la="exa -lahgbH --git"
 
 alias cat="bat"
 alias diff="icdiff"
+alias rm="trash"
 
 alias yless="jless --yaml"
 
