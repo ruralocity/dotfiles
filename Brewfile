@@ -17,6 +17,7 @@ brew "icdiff"
 brew "diff-so-fancy"
 cask "devtoys"
 brew "jless"
+brew "cheat"
 
 brew "node"
 brew "yarn"
