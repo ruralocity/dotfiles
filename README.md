@@ -44,4 +44,4 @@ chezmoi init git@github.com:ruralocity/dotfiles.git
 
 ## References
 
-- [chezmoi quick start guide](https://github.com/twpayne/chezmoi/blob/master/docs/QUICKSTART.md)
+- [chezmoi quick start guide](https://www.chezmoi.io/quick-start/)
