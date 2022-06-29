@@ -26,7 +26,7 @@
   # squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
   fixup = !sh -c 'git commit --fixup=$1' -
   squash = !sh -c 'git commit --squash=$1' -
- ri = rebase --interactive --autosquash
+  ri = rebase --interactive --autosquash
   finalize = rebase --interactive --autosquash
   branches = for-each-ref --sort='authordate:iso8601' --format='%(authordate:relative)%09%(authorname)%09%(refname:short)' refs/heads
   summary = status -u -s
@@ -54,3 +54,5 @@
 	rebase = false
 [commit]
   template = ~/.gitmessage
+[rebase]
+  autosquash = true
