@@ -18,6 +18,7 @@ brew "diff-so-fancy"
 cask "devtoys"
 brew "jless"
 brew "cheat"
+brew "doggo"
 
 brew "node"
 brew "yarn"
