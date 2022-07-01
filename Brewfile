@@ -19,6 +19,7 @@ cask "devtoys"
 brew "jless"
 brew "cheat"
 brew "doggo"
+brew "lolcat"
 
 brew "node"
 brew "yarn"
