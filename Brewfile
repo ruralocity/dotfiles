@@ -20,6 +20,7 @@ brew "jless"
 brew "cheat"
 brew "doggo"
 brew "lolcat"
+brew "gh"
 
 brew "node"
 brew "yarn"
