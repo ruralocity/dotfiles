@@ -30,4 +30,5 @@ brew "gpg"
 brew "cmake"
 
 brew "adr-tools"
-
+brew "yt-dip"
+brew "ffmpeg"
