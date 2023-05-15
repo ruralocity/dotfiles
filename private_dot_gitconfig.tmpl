@@ -4,7 +4,7 @@
         # autocrlf = input
         autocrlf = false
         safecrlf = true
-  pager = delta --plus-color="#012800" --minus-color="#340001"
+  pager = delta
 [user]
 	name = Aaron Sumner
 	email = {{ .email }}
@@ -56,3 +56,5 @@
   template = ~/.gitmessage
 [rebase]
   autosquash = true
+[url "git@github.com:"]
+  insteadOf = https://github.com/
