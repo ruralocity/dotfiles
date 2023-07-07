@@ -50,3 +50,6 @@ disabled = true
 
 [java]
 disabled = true
+
+[docker_context]
+disabled = true
