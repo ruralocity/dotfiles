@@ -21,6 +21,7 @@ brew "cheat"
 brew "doggo"
 brew "lolcat"
 brew "gh"
+brew "git-delta"
 
 brew "node"
 brew "yarn"
