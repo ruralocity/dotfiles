@@ -40,7 +40,8 @@ disabled = true
 disabled = true
 
 [python]
-format = '\($virtualenv\)'
+# format = '\($virtualenv\)'
+disabled = true
 
 [golang]
 disabled = true
@@ -52,4 +53,7 @@ disabled = true
 disabled = true
 
 [docker_context]
+disabled = true
+
+[php]
 disabled = true
