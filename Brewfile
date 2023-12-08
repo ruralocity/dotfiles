@@ -22,6 +22,7 @@ brew "doggo"
 brew "lolcat"
 brew "gh"
 brew "git-delta"
+brew "git-absorb"
 
 brew "node"
 brew "yarn"
