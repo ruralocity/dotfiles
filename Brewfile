@@ -4,7 +4,7 @@ brew "vim"
 brew "nvim"
 brew "less" # to support configuration via a .lesskey file
 
-brew "exa"
+brew "eza"
 brew "macos-trash"
 brew "ripgrep"
 brew "jq"

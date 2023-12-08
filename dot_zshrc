@@ -1,6 +1,6 @@
 # Aliases
-alias ls="exa -lhgbH --git"
-alias la="exa -lahgbH --git"
+alias ls="eza -lhgbH --git"
+alias la="eza -lahgbH --git"
 
 alias cat="bat"
 alias diff="icdiff"
