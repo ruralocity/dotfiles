@@ -29,6 +29,7 @@ brew "yarn"
 brew "npm"
 
 brew "gpg"
+brew "gpg2"
 brew "cmake"
 
 brew "adr-tools"
