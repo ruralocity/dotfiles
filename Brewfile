@@ -21,6 +21,7 @@ brew "cheat"
 brew "doggo"
 brew "lolcat"
 brew "gh"
+brew "delta"
 brew "git-delta"
 brew "git-absorb"
 
