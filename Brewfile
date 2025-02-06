@@ -1,48 +1,50 @@
+# Core utilities
 brew "chezmoi"
 brew "git"
-brew "vim"
 brew "nvim"
-brew "less" # to support configuration via a .lesskey file
+brew "just"
 
+brew "gpg"
+brew "gpg2"
+brew "cmake"
+brew "mise"
+
+# Command line improvements
+brew "starship"
+brew "less" # to support configuration via a .lesskey file
+brew "fzf"
 brew "eza"
-brew "macos-trash"
 brew "ripgrep"
 brew "jq"
 brew "bat"
 brew "tree"
 brew "fd"
-brew "httpie"
 brew "lynx"
 brew "icdiff"
 brew "diff-so-fancy"
-cask "devtoys"
 brew "jless"
-brew "cheat"
-brew "doggo"
-brew "lolcat"
-brew "gh"
 brew "delta"
 brew "git-delta"
-brew "git-absorb"
 
+# Development tools
+cask "visual-studio-code"
+brew "devcontainer"
+brew "httpie"
+brew "gh"
+brew "adr-tools"
+cask "devtoys"
+cask "font-sauce-code-pro-nerd-font"
+
+# Mac apps
+cask "rectangle"
+cask "obsidian"
+cask "raycast"
+
+# JS tooling; probably replace with mise?
 brew "node"
 brew "yarn"
 brew "npm"
 
-brew "gpg"
-brew "gpg2"
-brew "cmake"
-
-brew "adr-tools"
+# Misc
 brew "ffmpeg"
-brew "brew-gem"
-brew "rectangle"
-brew "obsidian"
-brew "visual-studio-code"
-brew "starship"
-brew "just"
-brew "fzf"
-cask "raycast"
-brew "devcontainer"
 
-cask "font-sauce-code-pro-nerd-font"
