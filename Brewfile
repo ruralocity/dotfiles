@@ -8,6 +8,7 @@ brew "gpg"
 brew "gpg2"
 brew "cmake"
 brew "mise"
+cask "docker"
 
 # Command line improvements
 brew "starship"
