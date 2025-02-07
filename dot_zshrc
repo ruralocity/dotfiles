@@ -1,5 +1,5 @@
 # Aliases
-alias ox='just --justfile ~/code/ox-cli/justfile'
+alias ox='just --justfile ~/Documents/code/ox-cli/justfile'
 
 alias ls="eza -lhgbH --git"
 alias la="eza -lahgbH --git"
