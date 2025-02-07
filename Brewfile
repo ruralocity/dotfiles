@@ -59,4 +59,4 @@ brew "npm"
 
 # Misc
 brew "ffmpeg"
-
+brew "ollama"
