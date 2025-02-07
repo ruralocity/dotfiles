@@ -42,6 +42,7 @@ cask "rectangle"
 cask "obsidian"
 cask "raycast"
 cask "cleanshot"
+cask "netnewswire"
 mas "Things 3", id: 904280696
 mas "Acorn 8", id: 6737921844
 mas "1Password for Safari", id: 1569813296
