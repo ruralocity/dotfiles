@@ -1,5 +1,6 @@
 # Core utilities
 brew "chezmoi"
+brew "mas"
 brew "git"
 brew "nvim"
 brew "just"
@@ -40,6 +41,16 @@ cask "font-sauce-code-pro-nerd-font"
 cask "rectangle"
 cask "obsidian"
 cask "raycast"
+mas "Things 3", id: 904280696
+mas "Acorn 8", id: 6737921844
+mas "1Password for Safari", id: 1569813296
+mas "Obsidian Web Clipper", id: 6720708363
+mas "Ghostery Privacy Ad Blocker", id: 6504861501
+mas "Sequel Ace", id: 1518036000
+mas "JSON Peep for Safari", id: 1458969831
+mas "Ivory for Mastodon by Tapbots", id: 6444602274
+# Slack is pre-installed on work Mac and hangs here
+#mas "Slack for Desktop", id: 803453959
 
 # JS tooling; probably replace with mise?
 brew "node"
