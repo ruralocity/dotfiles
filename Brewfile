@@ -10,6 +10,7 @@ brew "gpg2"
 brew "cmake"
 brew "mise"
 cask "docker"
+cask "1password-cli"
 
 # Command line improvements
 brew "starship"
