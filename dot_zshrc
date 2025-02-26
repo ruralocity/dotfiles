@@ -57,6 +57,5 @@ eval "$(just --completions zsh)"
 # fzf
 source <(fzf --zsh)
 
-echo "eval \"\$(/opt/local/bin/mise activate bash)\"" >> ~/.zshrc
-. "$HOME/.local/bin/env"
-
+# Mise for general perpose version management
+echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
