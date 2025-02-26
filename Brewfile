@@ -37,6 +37,7 @@ brew "gh"
 brew "adr-tools"
 cask "devtoys"
 cask "font-sauce-code-pro-nerd-font"
+cask "google-cloud-sdk"
 
 # Mac apps
 cask "rectangle"
