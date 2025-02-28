@@ -39,6 +39,7 @@ brew "adr-tools"
 cask "devtoys"
 cask "font-sauce-code-pro-nerd-font"
 cask "google-cloud-sdk"
+brew "heroku"
 
 # Mac apps
 cask "rectangle"
