@@ -65,3 +65,4 @@ brew "npm"
 brew "ffmpeg"
 brew "ollama"
 mas "fullmoon: local intelligence", id: 6727014156
+cask "google-drive"
