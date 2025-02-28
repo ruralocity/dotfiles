@@ -32,6 +32,7 @@ brew "git-delta"
 # Development tools
 cask "visual-studio-code"
 brew "devcontainer"
+brew "vscli"
 brew "httpie"
 brew "gh"
 brew "adr-tools"
