@@ -32,7 +32,7 @@ Create `.config/chezmoi/chezmoi.toml`:
 Initialize workstation to use chezmoi:
 
 ```
-chezmoi init git@github.com:ruralocity/dotfiles.git
+chezmoi init --apply ruralocity
 ```
 
 [Homebrew]:https://brew.sh
@@ -48,6 +48,13 @@ chezmoi init git@github.com:ruralocity/dotfiles.git
   $ chezmoi cd
   $ <use git to add/commit/push>
   ```
+
+
+## Things I haven't yet scripted
+
+- SSH keys/setup (look into using 1Password)
+- Lots of app-specific configs
+
 
 
 ## References
