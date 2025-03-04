@@ -7,7 +7,12 @@ Personal dotfile management, using [chezmoi].
 
 ## Setup
 
-Assumes Homebrew is already installed on the workstation.
+Install [Homebrew]:
+
+```
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 Install `chezmoi`:
 
@@ -28,6 +33,7 @@ Initialize workstation to use chezmoi:
 chezmoi init git@github.com:ruralocity/dotfiles.git
 ```
 
+[Homebrew]:https://brew.sh
 
 ## Common tasks
 
