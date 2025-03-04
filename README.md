@@ -7,10 +7,15 @@ Personal dotfile management, using [chezmoi].
 
 ## Setup
 
-Install [Homebrew]:
+Install XCode ...
 
 ```
 xcode-select --install
+```
+
+... then [Homebrew]:
+
+```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
@@ -52,9 +57,9 @@ chezmoi init --apply ruralocity
 
 ## Things I haven't yet scripted
 
-- SSH keys/setup (look into using 1Password)
+- SSH keys/setup (look into using 1Password for key management)
 - Lots of app-specific configs
-
+- Wondering, should I do some global Mise installs during setup?
 
 
 ## References
