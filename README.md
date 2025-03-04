@@ -24,6 +24,7 @@ Create `.config/chezmoi/chezmoi.toml`:
 
 ```toml
 [data]
+  name = "<your name>"
   email = "<email address>"
 ```
 
