@@ -46,6 +46,7 @@ export FZF_DEFAULT_COMMAND="rg --files"
 export PATH="/usr/local/heroku/bin:$PATH"
 # Because Python :/
 export PATH="/usr/local/opt/python@3.10/libexec/bin:$PATH"
+. "$HOME/.local/bin/env"
 
 # Start up Starship prompt customization
 eval "$(starship init zsh)"
