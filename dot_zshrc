@@ -1,7 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Aliases
-alias ox='just --justfile ~/Documents/code/ox-cli/justfile'
+alias ox='just --justfile ~/Documents/ox-cli/justfile'
 
 alias ls="eza -lhgbH --git"
 alias la="eza -lahgbH --git"
