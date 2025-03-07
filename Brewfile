@@ -5,10 +5,13 @@ brew "git"
 brew "nvim"
 brew "just"
 
-brew "gpg"
-brew "gpg2"
+# Build tools
+brew "libyaml"
 brew "cmake"
 brew "mise"
+
+brew "gpg"
+brew "gpg2"
 cask "docker"
 cask "1password-cli"
 
