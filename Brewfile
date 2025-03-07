@@ -61,11 +61,6 @@ mas "Ivory for Mastodon by Tapbots", id: 6444602274
 # Slack is pre-installed on work Mac and hangs here
 #mas "Slack for Desktop", id: 803453959
 
-# JS tooling; probably replace with mise?
-brew "node"
-brew "yarn"
-brew "npm"
-
 # Misc
 brew "ffmpeg"
 brew "ollama"
