@@ -1,7 +1,8 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Aliases
-alias ox='just --justfile ~/Documents/ox-cli/justfile'
+# ox-cli command line tool for ORM projects
+export OX_CLI_PATH=~/code/ox-cli
+alias ox='just --justfile "$OX_CLI_PATH/justfile"'
 
 alias ls="eza -lhgbH --git"
 alias la="eza -lahgbH --git"
