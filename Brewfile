@@ -43,6 +43,8 @@ cask "devtoys"
 cask "font-sauce-code-pro-nerd-font"
 cask "google-cloud-sdk"
 brew "heroku"
+brew "mysql@8.0"
+brew "mysql-client@8.0"
 
 # Mac apps
 cask "rectangle"
