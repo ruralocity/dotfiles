@@ -31,6 +31,7 @@ brew "diff-so-fancy"
 brew "jless"
 brew "delta"
 brew "git-delta"
+brew "git-who"
 
 # Development tools
 cask "visual-studio-code"
