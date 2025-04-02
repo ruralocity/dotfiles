@@ -44,11 +44,6 @@ export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 export FZF_DEFAULT_COMMAND="rg --files"
 
-# We're not ready for MySQL 9.x yet ...
-export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/mysql@8.4/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/mysql@8.4/include"
-
 export PATH="/usr/local/heroku/bin:$PATH"
 # Because Python :/
 export PATH="/usr/local/opt/python@3.10/libexec/bin:$PATH"
