@@ -45,6 +45,8 @@ cask "font-sauce-code-pro-nerd-font"
 cask "google-cloud-sdk"
 brew "heroku"
 brew "mysql"
+cask "zed"
+cask "ghostty"
 
 # Mac apps
 cask "rectangle"
