@@ -47,6 +47,7 @@ brew "heroku"
 brew "mysql"
 cask "zed"
 cask "ghostty"
+cask "cloc"
 
 # Mac apps
 cask "rectangle"
