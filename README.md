@@ -7,37 +7,25 @@ Personal dotfile management, using [chezmoi].
 
 ## Setup
 
-Install XCode ...
+Clone this repo, then run `install.sh` from within it:
 
 ```
-xcode-select --install
+git clone https://github.com/ruralocity/dotfiles.git
+cd dotfiles
+./install.sh
 ```
 
-... then [Homebrew]:
+It installs Xcode Command Line Tools (macOS only) and [Homebrew], runs `brew bundle` against
+`Brewfile` (cross-platform CLI tools; also `Brewfile.mac` for casks/Mac App Store apps on macOS),
+writes `~/.config/chezmoi/chezmoi.toml`, then runs `chezmoi init --apply` to lay down the rest of
+the dotfiles.
+
+By default it prompts for `NAME`, `EMAIL`, and `GITHUB_USERNAME`. To run it non-interactively (e.g.
+a devcontainer `postCreateCommand`), export those three as env vars beforehand and the prompts are
+skipped:
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-
-Install `chezmoi`:
-
-```
-brew install chezmoi
-```
-
-Create `.config/chezmoi/chezmoi.toml`:
-
-```toml
-[data]
-  name = "<your name>"
-  email = "<email address>"
-```
-
-Initialize workstation to use chezmoi:
-
-```
-chezmoi init --apply ruralocity
+NAME="Your Name" EMAIL="you@example.com" GITHUB_USERNAME="ruralocity" ./install.sh
 ```
 
 Recreate any machine-local secrets that live outside chezmoi's management, e.g. `~/.zshrc.local`

@@ -55,13 +55,24 @@ Files listed there stay in the repo but are never written to `$HOME`. Repo-meta 
 `CLAUDE.md`) belong in it. Anything else added at the top level *will* land in `$HOME` — that is
 intentional for `Brewfile` (→ `~/Brewfile`, so `brew bundle` works from home).
 
-## Brewfile
+## Brewfile / Brewfile.mac
 
-`Brewfile` is grouped by purpose with comments (core utilities, build tools, CLI improvements,
-development tools, Mac apps, misc). Keep new entries in the matching group. It mixes `brew`, `cask`, and
-`mas` (Mac App Store, which needs the numeric app id). Apply it with `brew bundle --file=~/Brewfile`.
-Adding a tool here usually pairs with a config change — e.g. `starship`/`less`/`fzf`/`mise` in the
-Brewfile each have corresponding setup in `dot_zshrc`.
+Two files, split by platform so `install.sh` and the devcontainer bootstrap path work on Linux too:
+
+- `Brewfile` — `brew` formulae only, cross-platform CLI tools. Grouped by purpose with comments
+  (core utilities, build tools, CLI improvements, development tools, misc). Keep new entries in the
+  matching group.
+- `Brewfile.mac` — everything that only works on macOS: `cask` entries and `mas` (Mac App Store,
+  needs the numeric app id), plus the `mas` formula itself. Grouped the same way (build tools,
+  development tools, Mac apps, misc).
+
+Both files land at the top of `$HOME` (`~/Brewfile`, `~/Brewfile.mac`) the same way `Brewfile` always
+has — neither is chezmoi-ignored. Apply with `brew bundle --file=~/Brewfile` (and
+`--file=~/Brewfile.mac` on macOS). Adding a tool here usually pairs with a config change — e.g.
+`starship`/`less`/`fzf`/`mise` in `Brewfile` each have corresponding setup in `dot_zshrc`.
+
+A cask or `mas` entry should never go in `Brewfile` — Homebrew Cask and Mac App Store installs don't
+work on Linux, which breaks `install.sh` on a devcontainer.
 
 ## Neovim
 

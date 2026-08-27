@@ -4,10 +4,10 @@
 
 # Install remaining tooling
 @finish-setup:
-  curl -LsSf https://aider.chat/install.sh | sh
   gh extension install ruralocity/gh-clone-team-repos
 
 # Update tooling
 @update:
   brew bundle
+  [ "$(uname -s)" = "Darwin" ] && brew bundle --file=Brewfile.mac || true
   gh extension upgrade --all
