@@ -40,6 +40,11 @@ Initialize workstation to use chezmoi:
 chezmoi init --apply ruralocity
 ```
 
+Recreate any machine-local secrets that live outside chezmoi's management, e.g. `~/.zshrc.local`
+(sourced by `.zshrc` if present, holds `JIRA_PERSONAL_TOKEN` for the
+`orm-claude-jira-ticket-manager` MCP server). These aren't tracked anywhere, so pull them from a
+password manager or the previous machine.
+
 [Homebrew]:https://brew.sh
 
 ## Common tasks

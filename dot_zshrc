@@ -69,6 +69,8 @@ eval "$(mise activate zsh)"
 export PATH="$PATH:/Users/asumner/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# Machine-local secrets (not tracked by chezmoi/git)
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # opencode
 export PATH=/Users/asumner/.opencode/bin:$PATH
