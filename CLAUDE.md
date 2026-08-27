@@ -68,3 +68,26 @@ Brewfile each have corresponding setup in `dot_zshrc`.
 `dot_config/nvim/init.vim` uses **minpac** (packages under `dot_config/nvim/pack/`). Plugins are
 committed into this repo as full checkouts rather than fetched at apply time, so adding a plugin means
 vendoring it — expect large diffs and the `dot_git/` encoding described above.
+
+## AI tool configs (`dot_claude/`, `dot_config/opencode/`)
+
+Only hand-maintained config is tracked; the surrounding state directories are deliberately unmanaged.
+Do **not** add these to the source state:
+
+- `~/.claude/.credentials.json`, `.claude.json` — auth tokens and per-project history
+- `~/.claude/{history.jsonl,sessions,projects,file-history,shell-snapshots,plugins,cache}` — machine state
+- `~/.claude/settings.local.json` — machine-local by design, and already covered by `dot_gitignore_global`
+- `~/.opencode/`, and `node_modules/`+`package*.json` under `~/.config/opencode` — installed artifacts
+  (opencode's own `.gitignore` there lists the latter)
+
+`dot_claude/settings.json.tmpl` is a template only so the `statusLine` command can use
+`{{ .chezmoi.homeDir }}` instead of a hardcoded `/Users/...` path. Two consequences: edit the `.tmpl`
+directly rather than `chezmoi add`-ing the target back over it, and re-render it after changes with
+`chezmoi execute-template < dot_claude/settings.json.tmpl | jq .` to confirm it is still valid JSON.
+
+Claude Code writes a generated `autoMode.environment` block into `~/.claude/settings.json` describing
+the current project. It is intentionally **not** in the tracked copy — leave it out when updating, or
+`chezmoi status` will report drift every time it is regenerated.
+
+The opencode config references `./plugins/caveman/plugin.js`, which is *not* tracked (third-party,
+reinstallable). A fresh machine will need caveman reinstalled or that `plugin` key removed.
