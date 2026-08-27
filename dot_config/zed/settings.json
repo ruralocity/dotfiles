@@ -7,21 +7,34 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Catppuccin Frappé",
+  "cli_default_open_behavior": "new_window",
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "ui_font_size": 18,
   "buffer_font_size": 20,
   "ui_font_family": ".SystemUIFont",
-  "buffer_font_family": "SauceCodePro Nerd Font Propo",
-  // "base_keymap": "Atom",
+  "buffer_font_family": "SauceCodePro Nerd Font",
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "Catppuccin Frappé"
   },
   "project_panel": {
     "dock": "right"
   },
   "terminal": {
-    "dock": "right"
+    "dock": "right",
+    "font_family": "SauceCodePro Nerd Font"
   },
   "git_panel": {
     "dock": "right"

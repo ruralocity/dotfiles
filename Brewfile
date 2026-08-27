@@ -47,7 +47,6 @@ brew "heroku"
 brew "mysql"
 cask "zed"
 cask "ghostty"
-cask "cloc"
 
 # Mac apps
 cask "rectangle"
@@ -64,7 +63,6 @@ mas "Sequel Ace", id: 1518036000
 mas "JSON Peep for Safari", id: 1458969831
 mas "Ivory for Mastodon by Tapbots", id: 6444602274
 mas "HazeOver • Distraction Dimmer™", id: 430798174
-mas "TickTick:To-Do List & Calendar", id: 626144601
 # Slack is pre-installed on work Mac and hangs here
 #mas "Slack for Desktop", id: 803453959
 

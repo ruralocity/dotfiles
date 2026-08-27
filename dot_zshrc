@@ -64,3 +64,14 @@ source <(fzf --zsh)
 # Mise for general perpose version management
 export MISE_ENV_FILE=".env"
 eval "$(mise activate zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/asumner/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# opencode
+export PATH=/Users/asumner/.opencode/bin:$PATH
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"
